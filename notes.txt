@@ -1,0 +1,6 @@
+Steps:
+  https://www.youtube.com/watch?v=ddKQ8sZo_v8
+    npm i -D tw-colors
+    npm i lucide-react
+    npm i react-redux @reduxjs/toolkit dotenv
+    npm i redux-persist
