@@ -3,4 +3,4 @@ Steps:
     npm i -D tw-colors
     npm i lucide-react
     npm i react-redux @reduxjs/toolkit dotenv
-    npm i redux-persist
+  https://github.com/tpriyanshu90/facebook-clone

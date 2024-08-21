@@ -6,6 +6,7 @@ import { Layout, LucideIcon, Menu, SlidersHorizontal } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import Image from "next/image";
 
 interface SidebarLinkProps {
     href: string;
@@ -49,8 +50,14 @@ const Sidebar = () => {
         <div className={sidebarClassNames}>
             {/* TOP LOGO */}
             <div className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSidebarCollapsed ? "px-5" : "px-8"}`}>
-                <div>logo</div>
-                <h1 className={`${isSidebarCollapsed ? "hidden" : "block"} font-extrabold text-2xl`}>EDSTOCK</h1>
+                <Image
+                    src="/profile_pic/p1.png"
+                    alt="edstock-logo"
+                    width={27}
+                    height={27}
+                    className="rounded w-8"
+                />
+                <h1 className={`${isSidebarCollapsed ? "hidden" : "block"} font-extrabold text-2xl`}>BRAND</h1>
                 <button className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100" onClick={toggleSidebar}>
                     <Menu className="w-4 h-4"/>
                 </button>
@@ -62,7 +69,7 @@ const Sidebar = () => {
             </div>
             {/* FOOTER */}
             <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
-                <p className="text-center text-xs text-gray-500">&copy; 2024 Edstock</p>
+                <p className="text-center text-xs text-gray-500">&copy; 2024 BRAND v1.0.0</p>
             </div>
         </div>
     );

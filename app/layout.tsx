@@ -6,7 +6,7 @@ import DashboardWrapper from "./dashboardWrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anthoneo\'s Resume",
+  title: "My Resume",
   description: "Facebook-style resume developed with Next.js",
 };
 

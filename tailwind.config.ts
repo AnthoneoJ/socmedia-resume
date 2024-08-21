@@ -45,13 +45,18 @@ const themes = {
   light: {
     ...lightTheme,
     white: "#ffffff",
+    black: "#000000",
     bgcol: "#f0f2f5",
+    cardcol: "#ffffff",
+    inputcol: "#f0f2f5",
   },
   dark: {
     ...darkTheme,
     white: colors.gray["950"],
     black: colors.gray["50"],
     bgcol: "#18191a",
+    cardcol: "#242526",
+    inputcol: "#3a3b3c",
   },
 };
 
@@ -63,13 +68,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+    extend: {},
   },
   plugins: [createThemes(themes)],
 };
