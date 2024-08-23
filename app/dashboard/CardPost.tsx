@@ -44,11 +44,12 @@ const CardPost: FC<PostProps> = ({
             )}
           </div>
         </div>
-        <p className="pt-1">{message}</p>
+        <p className="pt-1 whitespace-pre-line">{message}</p>
       </div>
       {postImage && (
-        <div className="relative h-56 md:h-96">
-          <Image src={postImage} alt="postImage" objectFit="cover" layout="fill" />
+        <div className="flex items-center mx-4 mb-2">
+          {/* <Image src={postImage} alt="postImage" objectFit="cover" layout="fill" /> */}
+          <img src={postImage} alt="postImage" className="object-contain w-full max-h-26 md:max-h-56 lg:max-h-96" />
         </div>
       )}
       <hr className="border-gray-300 mx-4" />

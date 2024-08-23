@@ -65,11 +65,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="grid grid-cols-[26%_74%] overflow-hidden">
-      <div className="flex flex-col gap-4 pb-4 pr-4">
-        <CardSideWidget items={mockSideList} />
-        <CardSideWidget items={languagesList} />
-      </div>
+    <div className="grid grid-cols-[74%_26%] overflow-hidden">
       <div className="grid grid-cols-1 gap-4 pb-4">
         <CardCreatePost
           image={createPostData.image}
@@ -91,8 +87,10 @@ const Dashboard = () => {
           />
         ))}
         <CardSectionWidget section_title="Education" items={mockSectionList}/>
-        <CardSectionWidget section_title="Education" items={mockSectionList}/>
-        <CardSectionWidget section_title="Education" items={mockSectionList}/>
+      </div>
+      <div className="flex flex-col gap-4 pb-4 pl-4">
+        <CardSideWidget items={mockSideList} />
+        <CardSideWidget items={languagesList} />
       </div>
     </div>
   );
